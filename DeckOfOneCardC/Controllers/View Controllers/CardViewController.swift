@@ -14,14 +14,7 @@ class CardViewController: UIViewController {
     @IBOutlet weak var suitLabel: UILabel!
     @IBOutlet weak var drawCardButton: UIButton!
     @IBOutlet weak var cardImage: UIImageView!
-    
-    //MARK: - Properties
-//    var card: MOPCard? {
-//        didSet {
-//            updateViews()
-//        }
-//    }
-    
+
     //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,12 +40,9 @@ class CardViewController: UIViewController {
             }
         }
     }
-
     
     //MARK: - Actions
     @IBAction func drawCardTapped(_ sender: Any) {
         self.fetchCards()
     }
-    
-
 }//End of class
